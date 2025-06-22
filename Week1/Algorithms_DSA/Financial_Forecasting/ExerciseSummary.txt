@@ -1,0 +1,56 @@
+
+Time Complexity
+
+The recursive method:
+
+public static double futureValue(double principle, double rate, int time) {
+    if (time == 0) return principle;
+    return futureValue(principle * (1 + rate), rate, time - 1);
+}
+
+Time Complexity: O(n)
+
+* The function makes recursive call for time period.
+* Therefore, the time complexity is linear: O(n), where n is the time.
+
+Space Complexity: O(n)
+
+* Each recursive call is stored in the stack.
+* For n periods, the call stack depth will be n.
+* This may lead to a stack overflow if n is very large.
+
+Optimization of Recursive Algorithm
+
+Although the recursive approach works fine for small n i.e. time,
+it is not suitable for large values due to stack limitations.
+
+Optimization Strategy: Use Iterative approach instead of Recursion
+
+The Iterative approach uses constant space unlike recursion.
+
+public static double futureValueIterative(double principle, double rate, int time) {
+    for (int i = 0; i < time; i++) {
+        principle *= (1 + rate);
+    }
+    return principle;
+}
+
+Time Complexity: O(n)
+
+One calculation call per period.
+
+Space Complexity: O(1)
+
+* Constant space use.
+* Safe for large time frame i.e. n.
+
+
+Summary
+
+| Approach               | Recursive                | Iterative                           |
+| ---------------------- | ------------------------ | ----------------------------------- |
+| Time Complexity        | O(n)                     | O(n)                                |
+| Space Complexity       | O(n)                     | O(1)                                |
+| Risk of Stack Overflow | Yes                      | No                                  |
+| Best Use Case          | Small n, simple problems | Large n, performance-critical cases |
+
