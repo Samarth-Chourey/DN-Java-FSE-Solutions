@@ -1,5 +1,6 @@
-package com.cognizant;
+package org.example;
 
+import org.example.BankAccount;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;

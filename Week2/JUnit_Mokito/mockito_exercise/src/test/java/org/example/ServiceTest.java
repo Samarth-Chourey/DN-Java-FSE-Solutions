@@ -1,6 +1,8 @@
-package com.cognizant;
+package org.example;
 
 
+import org.example.ExternalApi;
+import org.example.Service;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

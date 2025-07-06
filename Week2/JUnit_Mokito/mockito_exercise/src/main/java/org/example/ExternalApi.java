@@ -1,4 +1,4 @@
-package com.cognizant;
+package org.example;
 
 public interface ExternalApi {
     String getData();

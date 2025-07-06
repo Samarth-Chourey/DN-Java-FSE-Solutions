@@ -1,4 +1,4 @@
-package com.cognizant;
+package org.example;
 
 public class BankAccount {
     private double balance;
