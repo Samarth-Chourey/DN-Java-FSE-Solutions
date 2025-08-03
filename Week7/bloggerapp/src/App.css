@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 30px;
+}
+
+.column {
+  padding: 0 20px;
+}
+
+.with-border {
+  border-left: 4px solid green;
+}
